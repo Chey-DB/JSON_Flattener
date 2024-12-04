@@ -4,7 +4,6 @@
 
 The JSON Flattener script extracts specific key paths from a nested JSON structure and outputs a flattened version of the JSON. It is designed to handle complex nested JSON objects, including lists, and ensures only specified key-value pairs are included in the output.
 
----
 
 ## Features
 
@@ -14,13 +13,11 @@ The JSON Flattener script extracts specific key paths from a nested JSON structu
 - **Error Handling**: Gracefully handles invalid paths or malformed JSON files.
 - **Customizable Key Extraction**: Allows you to specify the exact keys you want to extract.
 
----
 
 ## Requirements
 
 - Python 3.7 or higher
 
----
 
 ## Installation
 
@@ -28,7 +25,6 @@ The JSON Flattener script extracts specific key paths from a nested JSON structu
 2. Ensure you have Python installed on your system.
 3. Install any required dependencies (none are required for this script as it uses standard libraries).
 
----
 
 ## Usage
 
@@ -70,13 +66,11 @@ keys = [
 
 ```
 
-flatten("products.json", keys, "flattened_output.json")
+`flatten("products.json", keys, "flattened_output.json")`
 
 ### Output
 
 The script generates a flattened JSON file (e.g., `flattened_output.json`) containing only the specified key-value pairs.
-
----
 
 ## Testing
 
@@ -88,8 +82,8 @@ The script includes a comprehensive suite of unit tests to ensure its core funct
 2. Run the tests using the following command:
    ```bash
    python -m unittest test_json_flattener.py
+   ```
 
-```
 
 ### Test Cases
 
@@ -109,5 +103,4 @@ If all tests pass, you’ll see output like this:
 Ran 4 tests in 0.000s
 
 OK
-
 ```
